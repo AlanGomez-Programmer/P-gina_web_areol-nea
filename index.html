@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title> VUESU AIR</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__logo">
+            <img src="./img/logo.png" alt="imagen_logo" class="login__imagen">
+        </div>
+        <h1 class="login__titulo">Iniciar Sesión</h1>
+        <form name="formulario" class="login__formulario">
+
+            <!-- Email del usuario-->
+            <input type="email" name="correo" placeholder="Email" required autocomplete="off">
+
+            <!-- Contraseña del usuario-->
+            <input type="password" name="contasena" placeholder="Contraseña" required autocomplete="off">
+
+            <!-- Recordatorio de datos-->
+            <input type="checkbox" id="recordatorio" name="recordatorio" value="password">
+            <label for="recordatorio">Recordar mis datos</label>
+
+            <!-- Botón de ingresar-->
+            <input type="submit" value="INGRESAR">
+        </form>
+        <nav class="login__opciones">
+            <ul>
+                <li><a href="">Crear cuenta</a></li>
+                <li><a href="">¿Has olvidado tu contaseña?</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
+
 </html>
