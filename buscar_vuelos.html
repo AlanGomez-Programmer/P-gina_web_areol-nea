@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/vuelos.css">
+    <title>VUESU - Vuelos</title>
+</head>
+<body>
+    <!--Contendor del logo-->
+    <div class="logo">
+        <img src="./img/logo_horizontal.png" alt="" class="logo__imagen">
+    </div>
+    <!-- Contenedor del formulario para la creación de contraseña-->
+    <section class="contenedor">
+        <div class="contenedor__contenido">
+            <!--Contendor para mostrar el usuario-->
+            <div class="contenedor__usuario">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <div>
+                    <p>Jonh Doe</p>
+                    <a href="">Cerrar Sesión</a>
+                </div>
+            </div>
+            <hr>
+            <!--Contendor para la búsqueda de vuelos-->
+            <div class="contenedor__busqueda">
+                <h1>Búsqueda de vuelos</h1>
+                <form class="formulario">
+                    <!-- Opción Solo ida-->
+                    <article class="check">                        
+                        <input type="checkbox" id="solo_ida" value="ida">
+                        <label for="solo_ida">Solo ida</label>
+                    </article>
+                    <!-- Origen de vuelo-->
+                    <input type="text" placeholder="Origen" required autocomplete="off"> 
+                    <input type="text" placeholder="Destino">
+                    <input type="date" placeholder="Fecha de salida">
+                    <input type="date" placeholder="Fecha de regreso">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
