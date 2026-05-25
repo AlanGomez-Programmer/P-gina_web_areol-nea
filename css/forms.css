@@ -91,7 +91,6 @@
 
 .login__formulario input[type="submit"],
 .formulario input[type="submit"] {
-    margin-top: 1rem;
     width: 100%;
     background-color: var(--fondo-secundario);
     border: none;
@@ -100,6 +99,7 @@
     color: white;
     font-family: var(--font-principal);
     font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .login__opciones {

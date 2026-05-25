@@ -30,6 +30,8 @@
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-family: var(--font-principal);
+    font-weight: normal;
 }
 
 .contendor__informacion {
@@ -56,16 +58,13 @@
     box-shadow: 0px 4px 10px rgba(95, 22, 0, 0.468);
     border-radius: 2rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .tarjeta:hover {
     transform: rotateY(-10rem);
 }
 
-.tarjeta ul {
-    margin-right: 0.5rem;
-    width: 100%;
-}
 
 .tarjeta li{
     list-style: none;
@@ -73,6 +72,7 @@
 
 .info2 {
     text-align: right;
+    margin-left: 0.2rem;
 }
 
 .info2 li:first-child {
@@ -106,4 +106,23 @@
 
 .boton:hover{
     opacity: 0.9;
+}
+
+/*Contenedor del formulario de datos de emergencia*/
+
+.contenedor__formulario {
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border: 1px solid var(--bordes);
+    box-shadow: 0px 4px 10px rgba(95, 22, 0, 0.468);
+    border-radius: 2rem;
+}
+
+.contenedor__formulario h2{
+    margin-top: 1rem;
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: normal;
 }
