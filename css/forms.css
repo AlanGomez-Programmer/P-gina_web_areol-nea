@@ -1,4 +1,3 @@
-
 /*Login*/
 
 .login {
@@ -27,7 +26,7 @@
 
 .login__titulo, 
 .contenedor__contenido h1 {
-    font-family: 'Poppins';
+    font-family: var(--font-principal);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -102,6 +101,10 @@
     margin-bottom: 1rem;
 }
 
+.formulario p {
+    font-family: var(--font-principal);
+}
+
 .login__opciones {
     margin-top: 1rem;
 }
@@ -114,5 +117,6 @@
     list-style: none;
     margin-bottom: 0.5rem;
 }
+
 
 
