@@ -1,0 +1,70 @@
+.contenedor__carga {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor__icono {
+    width: 40%;
+}
+
+.material-symbols-outlined {
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    animation: avion 4s forwards linear;
+}
+
+.texto {
+    font-family: var(--font-principal);
+}
+
+.cargando {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargando__barra {
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid var(--fondo-secundario);
+    border-radius: 1rem;
+    box-sizing: border-box; /* Evita que el padding altere el tamaño total */
+    overflow: hidden;       /* Mantiene la barra interna dentro de las esquinas redondeadas */
+}
+
+
+.linea {
+    width: 0%; 
+    height: 100%; 
+    border-radius: 1rem;
+    background-color: var(--fondo-secundario);
+    animation: cargando 4s forwards linear; 
+}
+
+
+@keyframes cargando {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes avion {
+    0% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}

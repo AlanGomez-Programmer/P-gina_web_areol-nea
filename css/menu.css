@@ -22,6 +22,13 @@
     align-items: center;
     border-radius: 0.5rem;
     box-shadow: 0px 4px 10px rgba(95, 22, 0, 0.468);
+    transition: 0.3s ease-in-out;
+    animation: aparecer 0.6s ease-in-out;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-0.4rem);
 }
 
 .tarjeta div {
@@ -29,6 +36,26 @@
     align-items: center;
 }
 
+.tarjeta a {
+    font-family: var(--font-principal);
+    text-decoration: none;
+    color: black;
+}
+
 .material-symbols-outlined {
     font-size: 1.5rem   ;
+}
+
+/*Animacion para tarjeta*/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+
+    to {
+        opacity: 1;
+        text-replace: translateY(0);
+    }
 }
