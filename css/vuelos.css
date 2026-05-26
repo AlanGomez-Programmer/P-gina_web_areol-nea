@@ -50,10 +50,11 @@
 }
 
 .tarjeta {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid var(--bordes);
     box-shadow: 0px 4px 10px rgba(95, 22, 0, 0.468);
     border-radius: 2rem;
@@ -72,18 +73,18 @@
 
 .info2 {
     text-align: right;
-    margin-left: 0.2rem;
 }
 
-.info2 li:first-child {
+.boleto {
     font-weight: bold;
 }
 
-.info2 li:last-child {
+
+.precio {
     font-size: 1.5rem;
 }
 
-.info2 span {
+.moneda {
     color: blue;
     font-weight: bold;
     font-size: 0.8rem;
@@ -108,6 +109,12 @@
     opacity: 0.9;
 }
 
+
+/*Check in*/
+.boleto__checkin {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 /*Contenedor del formulario de datos de emergencia*/
 
 .contenedor__formulario {
@@ -125,4 +132,23 @@
     font-family: var(--font-principal);
     font-size: 1rem;
     font-weight: normal;
+}
+
+
+/*Mis Vuelos*/
+.estado {
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.lugar {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.informacion_vuelo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
 }

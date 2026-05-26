@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/vuelos.css">
+    <title>VUESU - Mis Vuelos</title>
+</head>
+<body>
+    <!--Contendor del logo-->
+    <div class="logo">
+        <img src="./img/logo_horizontal.png" alt="" class="logo__imagen">
+    </div>
+    <!-- Contenedor de los vuelos disponibles -->
+    <section class="contenedor">
+        <div class="contenedor__contenido">
+            <!--Contendor para mostrar el usuario-->
+            <div class="contenedor__usuario">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <div>
+                    <p>Jonh Doe</p>
+                    <a href="">Cerrar Sesión</a>
+                </div>
+            </div>
+            <hr>
+             <div class="contenedor__disponibilidad">
+                <h1 class="disponibilidad__titulo">Mis Vuelos</h1>
+                <div class="contenedor__tarjetas">
+                    <article class="tarjeta">
+                        <img src="./img/avion.png" alt="">
+                        <div class="informacion_vuelo">
+                            <ul class="info1">
+                                <li>5:30 - 6:30</li>
+                                <li>1h 30min</li>
+                                <li>sep 29</li>
+                            </ul>
+                            <ul class="info2">
+                                <li class="boleto">VAA025</li>
+                                <li class="estado">A TIEMPO</li>
+                                <li class="lugar">Bogotá - Barranquilla</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="tarjeta">
+                        <img src="./img/avion.png" alt="">
+                        <div class="informacion_vuelo">
+                            <ul class="info1">
+                                <li>10:30 - 12:05</li>
+                                <li>1h 30min</li>
+                                <li>Jul 20</li>
+                            </ul>
+                            <ul class="info2">
+                                <li class="boleto">VAA412</li>
+                                <li class="estado">ATERRIZÓ</li>
+                                <li class="lugar">Bogotá - Barranquilla</li>
+                            </ul>
+                        </div>
+                    </article>
+                     <article class="tarjeta">
+                        <img src="./img/avion.png" alt="">
+                        <div class="informacion_vuelo">
+                            <ul class="info1">
+                                <li>14:15 - 15:45</li>
+                                <li>1h 30min</li>
+                                <li>Feb 24</li>
+                            </ul>
+                            <ul class="info2">
+                                <li class="boleto">VAA836</li>
+                                <li class="estado">ATERRIZÓ</li>
+                                <li class="lugar">Bogotá - Barranquilla</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <a href="" class="boton"> Regresar </a>
+        </div>
+    </section>
+</body>
+</html>
