@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,16 @@
 <body>
     <!--Contendor del logo-->
     <div class="logo">
-        <img src="./img/logo_horizontal.png" alt="" class="logo__imagen">
+        <img src="./img/logo_horizontal.png" alt="logo_horizontal" class="logo__imagen">
     </div>
     <section class="contenedor">
         <div class="contenedor__contenido">
             <h1>Recuperar Contraseña</h1>
             <hr>
             <form class="formulario" action="./animacion/cargando_crear_contraseña_recuperar.html">
-                <input type="email" placeholder="E-mail">
+                <!-- Email para recuperación de contraseña-->
+                <input type="email" placeholder="E-mail" required autocomplete="off">
+                <!-- Información para el usuario-->
                 <p class="formulario__info">
                     Si el e-mail se encuentra registrado se enviará un link para continuar
                     con la recuperación de su contraseña
