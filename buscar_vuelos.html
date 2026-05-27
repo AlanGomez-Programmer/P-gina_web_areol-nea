@@ -13,7 +13,7 @@
 <body>
     <!--Contendor del logo-->
     <div class="logo">
-        <img src="./img/logo_horizontal.png" alt="" class="logo__imagen">
+        <img src="./img/logo_horizontal.png" alt="logo_horizontal" class="logo__imagen">
     </div>
     <!-- Contenedor del formulario para la creación de contraseña-->
     <section class="contenedor">
@@ -40,9 +40,23 @@
                     </article>
                     <!-- Origen de vuelo-->
                     <input type="text" placeholder="Origen" required autocomplete="off"> 
-                    <input type="text" placeholder="Destino">
-                    <input type="date" placeholder="Fecha de salida">
-                    <input type="date" placeholder="Fecha de regreso">
+                    <input type="text" placeholder="Destino" required autocomplete="off">
+
+                    <!-- Fecha de salida-->                    
+                    <label for="f_salida"> Fecha de salida</label>
+                    <input type="date" 
+                        placeholder="Fecha de salida" 
+                        id="f_salida" required autocomplete="off" 
+                        min="2026-05-26">
+                        
+                    <!-- Fecha de regreso-->
+                    <label for="f_regreso">Fecha de regreso</label>
+                    <input type="date" 
+                        placeholder="Fecha de regreso" 
+                        id="f_regreso" r
+                        equired autocomplete="off">
+                        
+                    <!-- Boton de Buscar-->
                     <input type="submit" value="Buscar">
                 </form>
             </div>
