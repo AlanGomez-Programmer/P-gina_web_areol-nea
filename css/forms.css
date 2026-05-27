@@ -68,6 +68,10 @@
     font-size: 1.1rem;
 }
 
+.formulario label {
+    font-family: var(--font-principal);
+}
+
 .check {
     font-family: var(--font-principal);
 }
