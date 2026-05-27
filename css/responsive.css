@@ -12,7 +12,6 @@
         padding: 2rem;
     }
 
-
     .login{
         width: 100%;
         max-width: 950px;
@@ -33,6 +32,7 @@
         justify-content: center;
         align-items: center;
         padding: 3rem;
+        animation: aparecer_login_iz 1.5s ease-in-out;
     }
 
     .login__imagen{
@@ -46,6 +46,7 @@
         grid-column: 2;
         padding-left: 3rem;
         padding-right: 3rem;
+        animation: aparecer_login_de 1s ease-in-out;
     }
 
     .login__titulo{
@@ -103,5 +104,25 @@
 
     .login__opciones a:hover{
         color: var(--bordes);
+    }
+}
+
+/*Animaciones*/
+
+@keyframes aparecer_login_iz {
+    from {
+        transform: translatex(-40rem);
+    }
+    to {
+        transform: translatex(0);
+    }
+}
+
+@keyframes aparecer_login_de {
+    from {
+        transform: translateX(40rem);
+    }
+    to {
+        transform: translateX(0);
     }
 }
