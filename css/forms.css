@@ -1,11 +1,18 @@
 /*Login*/
 
+.body__login {
+   background-color: white; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .login {
     background-color: var(--fondo);
     max-width: 300px;
-    border-radius: 2rem;
     padding: 2rem;
     border: 3px solid var(--fondo-secundario);
+    border-radius: 2rem;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -50,6 +57,10 @@
     gap: 1rem;
 }
 
+.login__formulario {
+    text-align: center;
+}
+
 .login__formulario input[type="email"],
 .login__formulario input[type="password"],
 .formulario input[type="text"],
@@ -88,8 +99,8 @@
     border-bottom-color: var(--bordes);
 }
 
-.login__formulario input[type="submit"],
-.formulario input[type="submit"] {
+.formulario input[type="submit"],
+.boton__login {
     width: 100%;
     background-color: var(--fondo-secundario);
     border: none;
@@ -99,6 +110,10 @@
     font-family: var(--font-principal);
     font-size: 1.1rem;
     margin-bottom: 1rem;
+}
+
+.boton__login {
+    margin-top: 1rem;
 }
 
 .formulario p {
@@ -117,6 +132,4 @@
     list-style: none;
     margin-bottom: 0.5rem;
 }
-
-
 
