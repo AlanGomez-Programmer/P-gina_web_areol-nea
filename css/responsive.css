@@ -1,0 +1,107 @@
+/*Responsive Escritorio*/
+
+@media (min-width: 1024px){
+
+    /* BODY */
+
+    .body__login{
+        background-color: var(--fondo-secundario);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+
+    .login{
+        width: 100%;
+        max-width: 950px;
+        min-height: 550px;
+        padding: 0;
+        border: none;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 10px 20px 50px rgba(39, 38, 38, 0.466);
+    }
+
+    .login__logo{
+        grid-column: 1;
+        grid-row: 1 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .login__imagen{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .login__titulo,
+    .login__formulario,
+    .login__opciones{
+        grid-column: 2;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .login__titulo{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .login__formulario{
+        width: 100%;
+    }
+
+
+    .login__formulario input[type="email"],
+    .login__formulario input[type="password"]{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .check{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .boton__login{
+        margin-top: 1.5rem;
+        padding: 0.8rem 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .boton__login:hover{
+        transform: translateY(-3px);
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .login__opciones{
+        margin-top: 1.5rem;
+    }
+
+    .login__opciones ul{
+        text-align: center;
+    }
+
+    .login__opciones li{
+        margin-bottom: 1rem;
+    }
+
+    .login__opciones a{
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .login__opciones a:hover{
+        color: var(--bordes);
+    }
+}
