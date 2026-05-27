@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <body>
     <!--Contendor del logo-->
     <div class="logo">
-        <img src="./img/logo_horizontal.png" alt="" class="logo__imagen">
+        <img src="./img/logo_horizontal.png" alt="logo_horizontal" class="logo__imagen">
     </div>
     <!-- Contenedor del formulario de registro-->
     <section class="contenedor">
@@ -19,16 +19,22 @@
             <h1>Registro</h1>
             <hr>
             <form class="formulario" action="./animacion/cargando_crear_contrasena.html">
-                <input type="text" placeholder="Nombre Completo">
-                <input type="number" placeholder="No. identificación">
-                <input type="email" placeholder="E-mail">
-                <input type="number" placeholder="Télefono"> 
-                <select name="" id="">
+                <!-- Nombre Completo -->
+                <input type="text" placeholder="Nombre Completo" required autocomplete="off"> 
+                <!-- Número de identifiación-->
+                <input type="number" placeholder="No. identificación" required autocomplete="off">
+                <!-- Email (Correo Electronico)-->
+                <input type="email" placeholder="E-mail" required autocomplete="off">
+                <!-- Numero de teléfono-->
+                <input type="number" placeholder="Télefono" required autocomplete="off"> 
+                <!-- Ciudades -->
+                <select >
                     <option value="" selected disabled>Ciudad</option>
                     <option value="ciudad_guatemala">Ciudad de Guatemala</option>
                     <option value="bucaramanga">Bucaramanga</option>
                     <option value="cajasan">Cajasan</option>
                     <option value="cucuta">Cucuta</option>
+                    <option value="Bogota">Bogotá</option>
                 </select>
                 <input type="submit" value="Guardar">
             </form>
