@@ -60,7 +60,6 @@
         width: 100%;
     }
 
-
     .login__formulario input[type="email"],
     .login__formulario input[type="password"]{
         font-size: 1rem;
@@ -101,7 +100,6 @@
         transition: 0.3s ease-in-out;
     }
 
-
     .login__opciones a:hover{
         color: var(--bordes);
     }
@@ -111,13 +109,9 @@
     .contenedor{
         width: 95%;
         max-width: 1400px;
-
-        margin-top: 2rem;
         margin-bottom: 2rem;
-
         border-radius: 2rem;
         overflow: hidden;
-
         background: transparent;
         box-shadow: none;
     }
@@ -126,7 +120,7 @@
         padding: 2rem;
     }
 
-    /* Menú Principal */
+    /* MENÚ PRINCIPAL */
 
     .menu__tarjetas{
         margin-top: 3rem;
@@ -140,48 +134,33 @@
     }
 
     .tarjeta{
+        width: auto;
         background: white;
         padding: 2rem;
         border-radius: 1.5rem;
         border: none;
-
         min-height: 220px;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         transition: 0.4s ease-in-out;
-
         box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
     }
 
-    .tarjeta:hover{
+    .menu__tarjetas .tarjeta:hover{
         transform: translateY(-10px);
         box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
     }
 
-    .tarjeta div{
+    .menu__tarjetas .tarjeta div{
         width: 100%;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .tarjeta img{
-        width: 90px;
-        margin-bottom: 1.5rem;
-    }
-
-    .tarjeta a{
-        font-size: 1.4rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-
-    .tarjeta span{
+    .menu__tarjetas .material-symbols-outlined {
         display: none;
     }
 
@@ -196,34 +175,196 @@
     }
 
     .contenedor__contenido > a{
-        display: inline-block;
-
         margin-top: 1rem;
-
         text-decoration: none;
-
-        color: var(--fondo-secundario);
-
         font-weight: bold;
     }
+
+    /* USUARIO */
+
+    .contenedor__usuario{
+        width: 100%;
+        justify-content: right;
+        margin-bottom: 2rem;
+    }
+
+    .material-symbols-outlined{
+        font-size: 6rem;
+    }
+
+    .contenedor__usuario div p{
+        font-size: 1.3rem;
+    }
+
+    .contenedor__usuario div a{
+        font-size: 1rem;
+    }
+
+    .contendor__informacion{
+        margin-bottom: 3rem;
+        margin-left: 10%;
+    }
+
+    /* TARJETAS VUELOS */
+
+    .contenedor__tarjetas{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contenedor__tarjetas .tarjeta{
+        width: 100%;
+        min-height: 180px;
+        background: white;
+        border-radius: 2rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .contenedor__tarjetas .tarjeta:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .contenedor__tarjetas .tarjeta:last-child{
+        grid-column: 1 / 3;
+    }
+
+    .info1 li,
+    .info2 li{
+        margin-bottom: 0.5rem;
+    }
+
+    .boleto{
+        font-size: 1.5rem;
+    }
+
+    .precio{
+        font-size: 2rem;
+    }
+
+    .estado{
+        font-size: 1.1rem;
+    }
+
+    .lugar{
+        font-size: 1rem;
+    }
+
+    .informacion_vuelo{
+        width: 100%;
+    }
+
+    /* BOTON */
+
+    .boton{
+        width: 300px;
+        margin: 3rem auto 0 auto;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+    .boton:hover{
+        transform: translateY(-5px);
+    }
+
+    /* BUSCAR VUELOS */
+
+    .formulario{
+        width: 40%;
+        max-width: 900px;
+        margin: 2rem auto;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .formulario input,
+    .formulario select{
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .formulario input[type="submit"]{
+        margin-top: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    .formulario input[type="submit"]:hover{
+        transform: translateY(-4px);
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    /* CHECK-IN */
+
+    .contenedor__disponibilidad{
+        width: 100%;
+  
+    }
+
+    .contenedor__formulario{
+        margin: auto;
+        width: 80%;
+        margin-top: 0;
+        padding: 2rem;
+        border-radius: 2rem;
+        background: white;
+    }
+
+    .contenedor__formulario h2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    /*avion de carga*/
+
+    .contenedor__icono .material-symbols-outlined {
+       width: 0%;
+        display: flex;
+        justify-content: center;
+        animation: avion 4s forwards linear; 
+    }
+
+    /* Registro */
+
 }
 
 /*Animaciones*/
 
 @keyframes aparecer_login_iz {
-    from {
-        transform: translatex(-40rem);
+
+    from{
+        transform: translateX(-40rem);
     }
-    to {
-        transform: translatex(0);
+
+    to{
+        transform: translateX(0);
     }
 }
 
 @keyframes aparecer_login_de {
-    from {
+
+    from{
         transform: translateX(40rem);
     }
-    to {
+
+    to{
         transform: translateX(0);
+    }
+}
+
+@keyframes avion {
+    0% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(480px);
     }
 }
