@@ -43,7 +43,7 @@
 
 .contenedor__tarjetas {
     width: 100%;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     margin: auto;
 }
