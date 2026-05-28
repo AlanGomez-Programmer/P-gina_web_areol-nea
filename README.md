@@ -394,6 +394,10 @@ Posteriormente se agregaron adaptaciones para escritorio mediante:
 
 ---
 
-# 👨‍💻 Autor
 
-Proyecto desarrollado como práctica de diseño y maquetación web responsive para una interfaz de aerolínea ficticia llamada **VUESU AIR**.
+## 👨 AUTOR
+Programador Full-Stack Jr. Alan Gomez
+
+GitHub: [AlanGomez-Programmer](https://github.com/AlanGomez-Programmer)
+
+Linkedln: alan-gomez-763163320
