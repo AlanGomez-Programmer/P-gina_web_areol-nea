@@ -332,39 +332,38 @@
         animation: avion 4s forwards linear; 
     }
 
-    /* Registro */
+    /*Animaciones*/
+
+    @keyframes aparecer_login_iz {
+
+        from{
+            transform: translateX(-40rem);
+        }
+
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes aparecer_login_de {
+
+        from{
+            transform: translateX(40rem);
+        }
+
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes avion {
+        0% {
+            transform: translateX(1px);
+        }
+        100% {
+            transform: translateX(480px);
+        }
+    }
 
 }
 
-/*Animaciones*/
-
-@keyframes aparecer_login_iz {
-
-    from{
-        transform: translateX(-40rem);
-    }
-
-    to{
-        transform: translateX(0);
-    }
-}
-
-@keyframes aparecer_login_de {
-
-    from{
-        transform: translateX(40rem);
-    }
-
-    to{
-        transform: translateX(0);
-    }
-}
-
-@keyframes avion {
-    0% {
-        transform: translateX(1px);
-    }
-    100% {
-        transform: translateX(480px);
-    }
-}
