@@ -153,11 +153,12 @@
 }
 
 .contenedor__usuario,
-.contenedor__busqueda {
-    animation: aparecer_busqueda 3s ease-in-out;
+.contenedor__busqueda,
+.contenedor__disponibilidad {
+    animation: aparecer 3s ease-in-out;
 }
 
-@keyframes aparecer_busqueda {
+@keyframes aparecer {
      from {
         opacity: 0;
         transform: translateY(-5rem);
