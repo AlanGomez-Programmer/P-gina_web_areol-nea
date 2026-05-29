@@ -129,10 +129,6 @@
         gap: 2rem;
     }
 
-    .menu__tarjetas .tarjeta:last-child{
-        grid-column: 1 / 3;
-    }
-
     .tarjeta{
         width: auto;
         background: white;
@@ -330,6 +326,25 @@
         display: flex;
         justify-content: center;
         animation: avion 4s forwards linear; 
+    }
+
+    /*Ofertas */
+
+    .contenedor__ofertas{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .tarjeta__imagen{
+        height: 260px;
+    }
+
+    .tarjeta__lugar{
+        font-size: 1.5rem;
+    }
+
+    .tarjeta__precio{
+        font-size: 2rem;
     }
 
     /*Animaciones*/
