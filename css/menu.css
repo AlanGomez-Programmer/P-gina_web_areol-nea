@@ -26,6 +26,9 @@
     animation: aparecer 0.6s ease-in-out;
 }
 
+.tarjeta div > img {
+    width: 80px;
+}
 
 .tarjeta:hover {
     transform: translateY(-0.4rem);
